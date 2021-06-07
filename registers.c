@@ -44,9 +44,9 @@ int main(){
     return 0;
 }
 
-void read_string(char txt[]){
-    fflush(stdin);
-    fgets(txt, MAX, stdin);
+void read_line(char txt[], FILE *init){
+    
+    fgets(txt, MAX, init);
     if (txt[strlen(txt)-1]=='\n')
         txt[strlen(txt)-1]='\0';
 }
